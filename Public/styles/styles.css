@@ -1,0 +1,118 @@
+/* styles.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  line-height: 1.5;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+header button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+header button:hover {
+  background-color: #333;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.product-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.product-card p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* Email Signup */
+#emailSection {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+}
+
+#emailSection input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#emailSection button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#emailSection button:hover {
+  background-color: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 40px;
+  font-size: 0.9rem;
+}

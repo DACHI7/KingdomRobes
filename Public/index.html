@@ -1,70 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KingdomRobes</title>
-<link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KingdomRobes</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
 </head>
 <body>
-  <!-- Hero Section -->
-  <section id="hero">
+  <!-- HEADER -->
+  <header>
     <h1>KingdomRobes</h1>
-    <p>Founded by Robert Turpin</p>
-  </section>
+    <nav>
+      <button onclick="scrollToSection('shirts')">Shirts</button>
+      <button onclick="scrollToSection('pants')">Pants</button>
+      <button onclick="scrollToSection('shorts')">Shorts</button>
+      <button onclick="scrollToSection('hoodies')">Hoodies</button>
+      <button onclick="scrollToSection('beanies')">Beanies</button>
+    </nav>
+  </header>
 
-  <!-- Navigation -->
-  <nav>
-    <button onclick="showCategory('shirts')">Shirts</button>
-    <button onclick="showCategory('pants')">Pants</button>
-    <button onclick="showCategory('shorts')">Shorts</button>
-    <button onclick="showCategory('hoodies')">Hoodies</button>
-    <button onclick="showCategory('beanies')">Beanies</button>
-  </nav>
-
-  <!-- Product Grid -->
-  <section id="products">
-    <div class="category" id="shirts">
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Shirts -->
+    <section id="shirts" class="product-section">
       <h2>Shirts</h2>
-      <div class="grid">
-        <!-- Example Item -->
-        <div class="item">
-          <img src="/images/shirt1.png" alt="Shirt 1">
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/shirt1.jpg" alt="Shirt 1">
+          <h3>Classic Tee</h3>
           <p>$25 USD</p>
-          <select>
-            <option value="black">Black</option>
-            <option value="grey">Charcoal</option>
-            <option value="white">White</option>
-          </select>
+          <p>Colors: Grey, White, Black</p>
         </div>
-        <!-- Repeat 5 items -->
+        <div class="product-card">
+          <img src="images/shirt2.jpg" alt="Shirt 2">
+          <h3>V-Neck Tee</h3>
+          <p>$28 USD</p>
+          <p>Colors: Grey, White, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/shirt3.jpg" alt="Shirt 3">
+          <h3>Graphic Tee</h3>
+          <p>$30 USD</p>
+          <p>Colors: Grey, White, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/shirt4.jpg" alt="Shirt 4">
+          <h3>Pocket Tee</h3>
+          <p>$27 USD</p>
+          <p>Colors: Grey, White, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/shirt5.jpg" alt="Shirt 5">
+          <h3>Long Sleeve</h3>
+          <p>$32 USD</p>
+          <p>Colors: Grey, White, Black</p>
+        </div>
       </div>
-    </div>
-    <!-- Repeat for other categories -->
-  </section>
+    </section>
 
-  <!-- Support & Email Signup -->
-  <section id="support">
-    <h2>Contact Us</h2>
-    <form id="support-form">
-      <input type="email" name="email" placeholder="Your email" required>
-      <textarea name="message" placeholder="Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+    <!-- Pants -->
+    <section id="pants" class="product-section">
+      <h2>Pants</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/pant1.jpg" alt="Pants 1">
+          <h3>Classic Jeans</h3>
+          <p>$40 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/pant2.jpg" alt="Pants 2">
+          <h3>Joggers</h3>
+          <p>$35 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/pant3.jpg" alt="Pants 3">
+          <h3>Chinos</h3>
+          <p>$42 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/pant4.jpg" alt="Pants 4">
+          <h3>Track Pants</h3>
+          <p>$38 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/pant5.jpg" alt="Pants 5">
+          <h3>Wide Leg</h3>
+          <p>$45 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+      </div>
+    </section>
 
-    <h2>Sign up for updates</h2>
-    <form id="signup-form">
-      <input type="email" name="email" placeholder="Your email" required>
-      <button type="submit">Subscribe</button>
-    </form>
-  </section>
+    <!-- Shorts -->
+    <section id="shorts" class="product-section">
+      <h2>Shorts</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/short1.jpg" alt="Short 1">
+          <h3>Casual Shorts</h3>
+          <p>$20 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/short2.jpg" alt="Short 2">
+          <h3>Sport Shorts</h3>
+          <p>$22 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/short3.jpg" alt="Short 3">
+          <h3>Denim Shorts</h3>
+          <p>$25 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/short4.jpg" alt="Short 4">
+          <h3>Beach Shorts</h3>
+          <p>$23 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/short5.jpg" alt="Short 5">
+          <h3>Running Shorts</h3>
+          <p>$24 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- Footer -->
+    <!-- Hoodies -->
+    <section id="hoodies" class="product-section">
+      <h2>Hoodies</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/hoodie1.jpg" alt="Hoodie 1">
+          <h3>Classic Hoodie</h3>
+          <p>$50 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/hoodie2.jpg" alt="Hoodie 2">
+          <h3>Zip Hoodie</h3>
+          <p>$55 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/hoodie3.jpg" alt="Hoodie 3">
+          <h3>Pullover</h3>
+          <p>$52 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/hoodie4.jpg" alt="Hoodie 4">
+          <h3>Graphic Hoodie</h3>
+          <p>$60 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/hoodie5.jpg" alt="Hoodie 5">
+          <h3>Cropped Hoodie</h3>
+          <p>$48 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beanies -->
+    <section id="beanies" class="product-section">
+      <h2>Beanies</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/beanie1.jpg" alt="Beanie 1">
+          <h3>Classic Beanie</h3>
+          <p>$15 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/beanie2.jpg" alt="Beanie 2">
+          <h3>Folded Beanie</h3>
+          <p>$18 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/beanie3.jpg" alt="Beanie 3">
+          <h3>Cuffed Beanie</h3>
+          <p>$17 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/beanie4.jpg" alt="Beanie 4">
+          <h3>Slouchy Beanie</h3>
+          <p>$16 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+        <div class="product-card">
+          <img src="images/beanie5.jpg" alt="Beanie 5">
+          <h3>Logo Beanie</h3>
+          <p>$20 USD</p>
+          <p>Colors: Grey, Black</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Email Signup -->
+    <section id="emailSection">
+      <h2>Sign Up for Updates</h2>
+      <form id="emailForm">
+        <input type="email" id="emailInput" placeholder="Enter your email" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 KingdomRobes | Founder: Robert Turpin</p>
-    <a href="/faq.html">FAQ / TOS</a>
+    <p>Support: <a href="mailto:robertturpin99@gmail.com">robertturpin99@gmail.com</a></p>
+    <p>&copy; 2025 KingdomRobes. All rights reserved. Founder: Robert Turpin</p>
   </footer>
 
-  <script src="/scripts.js"></script>
+  <script>
+    // Scroll to section when header button clicked
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) section.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
 </body>
 </html>
